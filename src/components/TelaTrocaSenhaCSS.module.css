@@ -1,0 +1,83 @@
+.container {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    background-color: beige;
+}
+
+.subcontainer {
+    overflow: hidden;
+    border-radius: 2%;
+    width:35%;
+    height:60%;
+    border: 1px solid grey;
+    background-color: #EEEEEE;
+}
+
+.containerTitulo {
+    height: 20%;
+    max-height: 20%;
+    display: flex;
+    align-items: center;
+    background-color: #EEEEEE;
+}
+
+.containerTitulo h1 {
+    padding-left: 3%;
+    font-size: 25px;
+}
+
+.container2 {
+    border-top: 1px solid grey;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 60%;
+    background-color: #EEEEEE;
+    flex-wrap: wrap;
+}
+
+.containerInputs {
+    width: 100%;
+    height: 100%;
+    background-color: #EEEEEE;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+}
+
+.containerInputs input {
+    border: 1px solid black;
+    margin-left: 5%;
+    margin-right: 5%; 
+    width: 90%;
+    height:20%;
+    border-radius: 6px;
+    margin-top: 1%;
+}
+
+.containerInputs p {
+    font-size: 20px;
+    padding-left: 5%;
+    margin-top: 3%;
+}
+
+.container3 {
+    border-top: 1px solid grey;
+    display:flex;
+    justify-content:right;
+    align-items: center;
+    width: 100%;
+    height: 20%;
+    background-color: #EEEEEE;
+}
+
+.container3 button {
+    margin: 2%;
+    width: 20%;
+    height: 60%;
+    border-radius: 6px;
+    cursor: pointer;
+}

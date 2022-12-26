@@ -1,24 +1,29 @@
-import logo from './logo.svg';
-import './App.css';
+import {BrowserRouter as Router, Route,Routes,Link} from "react-router-dom"
+import TelaCadastroUsuario from "./components/TelaCadastroUsuario";
+import TelaCadastroEvento from "./components/TelaCadastroEvento";
+import TelaLogin from "./components/TelaLogin"
+import TelaPrincipal from "./components/TelaPrincipal";
+import TelaDetalhesEvento from "./components/TelaDetalhesEvento"
+import TelaAtualizaEvento from "./components/TelaAtualizaEvento";
+import TelaTrocaSenha from "./components/TelaTrocaSenha";
+
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <Routes>
+          <Route path = "/" element = {<TelaLogin></TelaLogin>}></Route>
+          <Route path = "/cadastroUsuario" element = {<TelaCadastroUsuario></TelaCadastroUsuario>}></Route>
+          <Route path = "/principal" element = {<TelaPrincipal></TelaPrincipal>}></Route>
+          <Route path = "/cadastroEvento" element = {<TelaCadastroEvento></TelaCadastroEvento>}></Route>
+          <Route path = "/detalhesEvento/:id" element = {<TelaDetalhesEvento></TelaDetalhesEvento>}></Route>
+          <Route path = "/atualizaEvento" element = {<TelaAtualizaEvento></TelaAtualizaEvento>}></Route>
+          <Route path = "/trocaSenha" element = {<TelaTrocaSenha></TelaTrocaSenha>}></Route>
+
+
+      </Routes>
+    </Router>
   );
 }
 
