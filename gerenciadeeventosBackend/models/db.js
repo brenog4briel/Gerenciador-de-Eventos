@@ -1,7 +1,7 @@
 const Sequelize = require('sequelize');
 
 // Conexão com o banco de dados
-const sequelize = new Sequelize('database','db-username','db-password', {
+const sequelize = new Sequelize('gerenciaeventos','root','mortadela2020', {
     host: 'localhost',
     dialect: 'mysql',
     query:{raw:true}
